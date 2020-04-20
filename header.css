@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px var(--side-padding) 3px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+header .logo {
+  font-size: var(--font-large);
+  color: var(--red-color);
+}
+header .logo .title {
+  color: var(--white-color);
+  font-size: var(--font-medium);
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 4px;
+}
+header .icons .fa-search {
+  margin-right: var(--side-padding);
+}

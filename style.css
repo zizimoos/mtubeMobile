@@ -1,17 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "./header.css";
+@import "./playermetadata.css";
+@import "./actionChannel.css";
+@import "./upNext.css";
 
-:root{
-    /* color: ; */
-    --white-color:
-    --black-color:
-    --blue-color:
-    --red-color:
-    --gray-dark-color:
-    --grey-light-color
-
-    /* size: ; */
-    /* font-size: ; */
+:root {
+  /* color: ; */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --gray-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  /* size: ; */
+  --side-padding: 12px;
+  --avatar-sixe: 36px;
+  /* font-size: ; */
+  --font-large: 1.2rem;
+  --font-medium: 0.9rem;
+  --font-small: 0.8rem;
+  --font-micro: 0.7rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto", sans-serif;
+}
+ul {
+  list-style: none;
+}
+button,
+button:focus {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.infoAndupNext {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .infoAndupNext {
+    flex-direction: row;
+    margin: calc(var(--side-padding) * 3) 0;
+  }
+  .infoAndupNext > .info {
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+  .infoAndupNext > .upNext {
+    margin-right: 10%;
+  }
 }

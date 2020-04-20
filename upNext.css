@@ -1,0 +1,45 @@
+/* upNext */
+.upNext {
+  padding: 0 var(--side-padding);
+}
+.upNext > .title {
+  display: inline-block;
+  font-size: var(--font-medium);
+  color: var(--gray-dark-color);
+  margin-bottom: calc(var(--side-padding) / 2);
+}
+.upNext .item {
+  display: flex;
+  margin-bottom: calc(var(--side-padding) / 2);
+}
+.upNext .item .img {
+  flex: 1 1 30%;
+}
+
+.upNext .item .info {
+  flex: 1 1 60%;
+}
+.upNext .item .moreBtn {
+  flex: 1 1 10%;
+}
+.upNext .item .img img {
+  width: 100%;
+}
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 10px;
+}
+.upNext .item .info .title {
+  font-size: var(--font-medium);
+  margin-bottom: var(--side-padding);
+}
+.upNext .item .info .name,
+.upNext .item .info .views {
+  font-size: var(--font-micro);
+  color: var(--gray-dark-color);
+}
+.upNext .item button {
+  height: 100%;
+}

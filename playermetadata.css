@@ -1,0 +1,47 @@
+.player {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+body > .info {
+  padding: calc(var(--side-padding) * 1);
+}
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+  margin-bottom: var(--side-padding);
+}
+.info .metadata .hashtags li {
+  margin-right: var(--side-padding);
+}
+.info .metadata .titleAndButton {
+  display: flex;
+}
+.info .metadata .titleAndButton .title {
+  font-size: var(--font-medium);
+  margin-right: var(--side-padding);
+  margin-bottom: var(--side-padding);
+}
+.info .metadata .titleAndButton .title.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%;
+}
+.info .metadata .titleAndButton .moreBtn.clicked {
+  transform: rotate(180deg);
+}
+.info .metadata .views {
+  font-size: var(--font-small);
+  color: var(--gray-dark-color);
+}
